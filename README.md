@@ -1,5 +1,5 @@
 ---
-title: React
+title: LocoVault
 emoji: 🐠
 colorFrom: indigo
 colorTo: red
@@ -7,6 +7,8 @@ sdk: static
 pinned: false
 app_build_command: npm run build
 app_file: build/index.html
+license: apache-2.0
+short_description: Model locomotive recording app
 ---
 
 # Getting Started with Create React App
