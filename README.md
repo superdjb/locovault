@@ -1,14 +1,14 @@
 ---
-title: locovault-build
-emoji: 🐳
+title: LocoVault
+emoji: 📚
 colorFrom: blue
 colorTo: green
 sdk: static
 pinned: false
 tags:
-  - SuperDJB
-  - SC Tech
-  - LocoVault
+- SuperDJB
+- SC Tech
+- LocoVault
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
