@@ -1,6 +1,6 @@
 ---
 title: LocoVault
-emoji: 🐠
+emoji: 📚
 colorFrom: indigo
 colorTo: red
 sdk: static
