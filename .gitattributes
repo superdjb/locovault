@@ -2,3 +2,4 @@
 2 filter=lfs diff=lfs merge=lfs -text
 3 filter=lfs diff=lfs merge=lfs -text
 public/images/1 filter=lfs diff=lfs merge=lfs -text
+public/images/2 filter=lfs diff=lfs merge=lfs -text
