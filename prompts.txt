@@ -1,0 +1,109 @@
+Project Name: LocoVault
+
+Build a responsive React web app (mobile-first, works on desktop/tablet too) with the following structure:
+
+⸻
+
+Landing Page (Public)
+	•	Header:
+	•	Logo (LocoVault text logo for now).
+	•	Sign Up / Log In buttons top-right (always visible).
+	•	Hero Section:
+	•	Title: LocoVault
+	•	Tagline: Your model railway collection, in your pocket.
+	•	Three short feature bullets:
+	•	📸 Log every locomotive with photos and key details
+	•	🃏 Sleek Top Trumps–style cards make browsing fun
+	•	🔒 Sign up free to start building your collection today
+	•	CTA Buttons:
+	•	[Sign Up Free] (primary big button)
+	•	[Log In] (secondary outline button, also in header)
+	•	Showcase Carousel:
+	•	Show 3 sample loco cards in a horizontal scroll with left/right arrows.
+	•	Marquee examples to include:
+	1.	Flying Scotsman — LNER Apple Green livery
+	2.	Class 43 HST — BR Blue/Grey livery
+	3.	Class 37 “Loch Long” — Prototype livery
+	•	Each card styled like Top Trumps: large photo header, then rows of basic details (Maker, Model, Number, Scale, Date purchased).
+	•	Beneath each card’s main image → 2–3 thumbnails that link to the “back of card” views.
+
+⸻
+
+Card Details (Front + Back)
+
+Front of Card (always visible)
+	•	Large image of the loco
+	•	Key details in neat rows:
+	•	Maker
+	•	Model name/number
+	•	Scale
+	•	Era
+	•	Date purchased
+
+Back of Card (expanded view / thumbnails)
+	•	Additional details categories (placeholders in MVP):
+	•	Prototype history (short text snippet or notes)
+	•	CV/DCC chip settings (configurable values list)
+	•	Notes / condition (free text)
+	•	Additional photos (thumbnail gallery)
+
+⸻
+
+Authentication
+	•	Mandatory login: users must sign up or log in to access collection features.
+	•	Sign Up / Log In:
+	•	Simple email + password for MVP.
+	•	Centered card-style modal form with clean styling.
+	•	Future upgrade: social login (placeholder).
+
+⸻
+
+User Features
+	•	Basic (free):
+	•	Log locos with photo + basic info fields (Maker, Model, Number, Scale, Date purchased).
+	•	Browse collection in card format.
+	•	Advanced (subscription/purchase TBD):
+	•	Add extended fields (CV/DCC chip settings, prototype notes, extra photos).
+	•	Sharing/community features.
+	•	For MVP: show placeholders/upgrade banners where advanced features will go.
+
+⸻
+
+Data Categories Reference
+	•	Use www.locoshed.com as a reference site for comprehensive data categories (classes, liveries, allocations, service dates, etc.).
+	•	For MVP: only include the basics (Maker, Model, Number, Scale, Date purchased, Era).
+	•	Structure the app so additional categories can be added later without redesigning the cards.
+
+⸻
+
+Style & Visual References
+
+Use these React examples as style inspiration:
+	•	Material UI React Card → structure for image header + details + actions.
+	•	Mobiscroll React Cards Demo → responsive horizontal card scrolling with arrows.
+	•	Tailwind Material React Card → rounded corners, clean typography, soft shadows.
+	•	Untitled UI React Landing Pages → hero + features + login CTA.
+	•	HTMLRev Free React Templates → extra landing page inspiration.
+
+Styling requirements:
+	•	Clean, modern, mobile-first.
+	•	Rounded cards, subtle shadows, simple color palette.
+	•	Landscape layout for cards, swipeable or scrollable on mobile.
+
+⸻
+
+Technical Notes
+	•	Framework: React + TypeScript, responsive layout.
+	•	Use Tailwind CSS for styling.
+	•	Landing page + Auth pages first.
+	•	Populate sample cards with placeholders for the three locos listed above.
+	•	Code modular: components for Landing, Auth, Card, Carousel, Expanded Info.
+
+⸻
+
+Deliverables (MVP):
+	•	Landing page with hero section, login/signup buttons, carousel of 3 sample loco cards (Scotsman, Class 43, Class 37).
+	•	Log in / sign up flow (email + password).
+	•	Example loco card structure with expandable “back of card” info.
+	•	Placeholders for advanced features (upgrade banners).
+	•	Style references matched (cards + landing).
