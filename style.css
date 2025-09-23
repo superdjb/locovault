@@ -73,3 +73,15 @@ p {
 .carousel-container::-webkit-scrollbar {
   display: none;
 }
+
+/* Force consistent carousel spacing */
+.carousel-container {
+  gap: 0.5rem;   /* adjust here: 0.5rem = 8px, 1rem = 16px, etc. */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
