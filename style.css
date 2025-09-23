@@ -85,3 +85,13 @@ p {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+.carousel-container {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+}
+
+.card {
+  scroll-snap-align: center;
+}
+
