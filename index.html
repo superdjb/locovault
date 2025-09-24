@@ -346,13 +346,13 @@
     card.classList.toggle('card-flipped');
   }
 
-  // Auto-center on middle card (desktop only)
+   // Auto-center on middle card (desktop only)
   function centerOnMiddleCard() {
     const carousel = document.getElementById('carousel');
     const cards = carousel.querySelectorAll('.card');
     if (!carousel || cards.length === 0) return;
 
-    if (window.innerWidth >= 768 && cards.length > 1) {
+    if (window.innerWidth >= 1024 && cards.length > 1) {
       const middleIndex = Math.floor(cards.length / 2); // find middle card dynamically
       const middleCard = cards[middleIndex];
       const offset = middleCard.offsetLeft - (carousel.clientWidth / 2) + (middleCard.clientWidth / 2);
