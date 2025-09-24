@@ -354,6 +354,21 @@
     carousel.scrollLeft = scrollTo;
   }
 });
+
+  // Center on card 2 when page loads (desktop only)
+  function centerOnSecondCard() {
+    const carousel = document.getElementById("carousel");
+    const cards = carousel.querySelectorAll(".card");
+    if (window.innerWidth >= 1024 && cards.length >= 2) {
+      const cardWidth = cards[0].offsetWidth + 16; // width + gap
+      carousel.scrollLeft = cardWidth; // scroll one card across
+    }
+  }
+
+  window.addEventListener("load", centerOnSecondCard);
+  window.addEventListener("resize", centerOnSecondCard);
+
+  
 </script>
 
 </body>
