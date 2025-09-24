@@ -92,7 +92,9 @@ p {
     justify-content: center; /* keeps card centered */
   }
   .card {
-    width: 90vw;   /* nearly full width of screen */
-    max-width: 400px; 
-  }
+  width: 100%;       
+  max-width: 100%;   
+  flex: 0 0 100%;    
+  }  
+
 }
