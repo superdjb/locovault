@@ -326,9 +326,11 @@
     duration: 800,
     once: true
   });
+
   // Initialize feather icons
   feather.replace();
-  // Carousel scrolling
+
+  // Carousel scrolling buttons
   function scrollCarousel(direction) {
     const carousel = document.getElementById('carousel');
     const scrollAmount = 350;
@@ -337,38 +339,31 @@
       behavior: 'smooth'
     });
   }
-  // Card flipping functionality
+
+  // Card flipping
   function flipCard(button) {
     const card = button.closest('.card');
     card.classList.toggle('card-flipped');
   }
 
-  window.addEventListener('load', () => {
-  const carousel = document.getElementById('carousel');
-  const cards = carousel.querySelectorAll('.card');
+  // Auto-center on middle card (desktop only)
+  function centerOnMiddleCard() {
+    const carousel = document.getElementById('carousel');
+    const cards = carousel.querySelectorAll('.card');
+    if (!carousel || cards.length === 0) return;
 
-  // Only run this if it's desktop width (≥ 768px for example)
-  if (window.innerWidth >= 768 && cards.length > 1) {
-    const middleCard = cards[1]; // Card 2
-    const scrollTo = middleCard.offsetLeft - (carousel.clientWidth / 2) + (middleCard.clientWidth / 2);
-    carousel.scrollLeft = scrollTo;
-  }
-});
-
-  // Center on card 2 when page loads (desktop only)
-  function centerOnSecondCard() {
-    const carousel = document.getElementById("carousel");
-    const cards = carousel.querySelectorAll(".card");
-    if (window.innerWidth >= 1024 && cards.length >= 2) {
-      const cardWidth = cards[0].offsetWidth + 16; // width + gap
-      carousel.scrollLeft = cardWidth; // scroll one card across
+    if (window.innerWidth >= 768 && cards.length > 1) {
+      const middleIndex = Math.floor(cards.length / 2); // find middle card dynamically
+      const middleCard = cards[middleIndex];
+      const offset = middleCard.offsetLeft - (carousel.clientWidth / 2) + (middleCard.clientWidth / 2);
+      carousel.scrollTo({ left: offset, behavior: 'smooth' });
+    } else {
+      carousel.scrollTo({ left: 0, behavior: 'smooth' }); // mobile → start at card 1
     }
   }
 
-  window.addEventListener("load", centerOnSecondCard);
-  window.addEventListener("resize", centerOnSecondCard);
-
-  
+  window.addEventListener('load', centerOnMiddleCard);
+  window.addEventListener('resize', centerOnMiddleCard);
 </script>
 
 </body>
